@@ -14,10 +14,11 @@ import Home from "../pages/Home";
 import Footer from "../components/layout/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Projects from "../components/sections/Projects";
+
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Services from "../pages/Services";
+import Projects from "../pages/Projects";
 
 const Router = () => {
   return (

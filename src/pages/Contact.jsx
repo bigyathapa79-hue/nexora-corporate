@@ -1,10 +1,16 @@
+import ContactHero from "../components/sections/ContactHero";
+import ContactSection from "../components/sections/ContactSection";
+import CTA from "../components/sections/CTA";
+
 
 const Contact = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <ContactHero />
+      <ContactSection />
+      <CTA />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
