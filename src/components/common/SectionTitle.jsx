@@ -1,6 +1,8 @@
-const SectionTitle = ({ badge, title, description }) => {
+const SectionTitle = ({ badge, title, description, align = "center" }) => {
+  const alignment = align === "left" ? "text-left" : "text-center";
+
   return (
-    <div className="mx-auto mb-16 max-w-2xl text-center">
+    <div className={`mb-12 ${alignment}`}>
       <span className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
         {badge}
       </span>
