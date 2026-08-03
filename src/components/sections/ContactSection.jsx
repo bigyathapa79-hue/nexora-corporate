@@ -1,12 +1,12 @@
 import {
+  FaClock,
+  FaEnvelope,
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaEnvelope,
-  FaClock,
 } from "react-icons/fa";
 
 import Container from "../common/Container";
-import Button from "../common/Button";
+import ContactForm from "./ContactForm";
 
 const contactInfo = [
   {
@@ -75,34 +75,8 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-3xl border border-slate-200 p-8 shadow-sm">
-            <form className="space-y-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full rounded-xl border border-slate-300 px-5 py-3 outline-none focus:border-blue-600"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full rounded-xl border border-slate-300 px-5 py-3 outline-none focus:border-blue-600"
-              />
-
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full rounded-xl border border-slate-300 px-5 py-3 outline-none focus:border-blue-600"
-              />
-
-              <textarea
-                rows="5"
-                placeholder="Your Message"
-                className="w-full rounded-xl border border-slate-300 px-5 py-3 outline-none focus:border-blue-600"
-              ></textarea>
-
-              <Button className="w-full">Send Message</Button>
-            </form>
+          <div>
+            <ContactForm />
           </div>
         </div>
       </Container>

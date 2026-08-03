@@ -34,6 +34,9 @@ const CTA = () => {
                 Our Services
               </button>
             </Link>
+            <Link to="/lets-talk">
+              <Button>Let's Talk</Button>
+            </Link>
           </div>
         </div>
       </Container>

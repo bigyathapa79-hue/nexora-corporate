@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
 import Container from "../common/Container";
@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Services", path: "/services" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
+
 ];
 
 const Navbar = () => {
@@ -90,7 +91,9 @@ const Navbar = () => {
             ))}
 
             <div className="mt-4">
-              <Button className="w-full">Let's Talk</Button>
+              <Link to="/contact">
+                <Button className="w-full">Let's Talk</Button>
+              </Link>
             </div>
           </nav>
         </div>

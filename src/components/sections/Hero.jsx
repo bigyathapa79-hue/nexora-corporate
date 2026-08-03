@@ -4,6 +4,7 @@ import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import Container from "../common/Container";
 import Button from "../common/Button";
 import heroImage from "../../assets/images/hero.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -31,12 +32,17 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button>Get Started</Button>
+              <Link to="/contact">
+                <Button>Get Started</Button>
+              </Link>
 
-              <button className="flex items-center gap-2 rounded-lg border border-slate-300 px-6 py-3 font-medium transition hover:border-blue-600 hover:text-blue-600">
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-6 py-3 font-medium transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:text-blue-600"
+              >
                 Our Services
                 <FaArrowRight />
-              </button>
+              </Link>
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
