@@ -13,10 +13,11 @@ import About from "../pages/About";
 import Home from "../pages/Home";
 import Footer from "../components/layout/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Services from "../components/sections/Services";
+
 import Projects from "../components/sections/Projects";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
+import Services from "../pages/Services";
 
 const Router = () => {
   return (
